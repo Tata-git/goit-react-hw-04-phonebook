@@ -32,13 +32,9 @@ export function ContactsForm({ onSubmit }) {
 
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit({name, number});
+    onSubmit({ name, number });
     reset();
   };
-
-  // static propTypes = {
-  //   onSubmit: PropTypes.func.isRequired,
-  // };
 
   return (
     <WrapperForm onSubmit={handleSubmit}>
@@ -78,3 +74,7 @@ export function ContactsForm({ onSubmit }) {
     </WrapperForm>
   );
 }
+
+ContactsForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

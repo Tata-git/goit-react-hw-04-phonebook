@@ -41,8 +41,8 @@ export function App() {
     const normalizedName = name.toLowerCase();
 
     const duplicate = contacts.find(
-      ({ name }) => name.toLowerCase() === normalizedName
-      // contact => contact.name === name
+      // ({ name }) => name.toLowerCase() === normalizedName
+      contact => contact.name.toLowerCase() === normalizedName
     );
 
     if (duplicate) {
