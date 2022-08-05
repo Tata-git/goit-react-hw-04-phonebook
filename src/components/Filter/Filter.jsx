@@ -27,7 +27,4 @@ Filter.propTypes = {
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
 };
-//---------------------------------------------------------------
-// function Filter({ onChange, value }) {
-//   return <input type="text" onChange={onChange} value={value} />;
-// }
+
